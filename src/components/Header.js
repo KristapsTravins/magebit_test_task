@@ -19,9 +19,9 @@ const Header = () => {
                     </div>
                     <div className="menu_box">
                          <ul>
-                            <li> <a href="">About</a></li>
-                            <li><a href="">How it works</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li> <a href="/">About</a></li>
+                            <li><a href="/a">How it works</a></li>
+                            <li><a href="/a">Contact</a></li>
                          </ul>
                     </div>
                 </div>

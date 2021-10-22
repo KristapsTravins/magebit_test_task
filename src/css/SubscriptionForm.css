@@ -1,4 +1,7 @@
-
+#err{color: red;    
+    font-family: Arial;
+    font-size: 12px;
+}
 .text_main > h1{
     font-family: Georgia;
     font-style: normal;
@@ -7,7 +10,7 @@
     line-height: 44px;
     color: #131821;
 }
-.text_secondary > h5{
+.text_secondary > h2{
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
@@ -32,13 +35,36 @@
     margin: 0px 0 0 -40px;
 }
 .form_inner > input {
+    font-family: Arial;
+    font-size: 16px;
+    outline: none;
     width: 90%;
     height: 60px;
     border-top: 1px rgba(227, 227, 228, 1) solid;
     border-right: 1px white solid;
     border-bottom: 1px rgba(227, 227, 228, 1) solid;
-    padding: 0 0 0 13px;
+    padding: 0 0 0 33px;
     border-left: 4px solid rgba(64, 102, 165, 1);
+}
+
+#email_input:hover{
+
+    border-top: 0.5px solid rgba(64, 102, 165, 1);
+    border-bottom: 0.5px solid rgba(64, 102, 165, 1);
+    border-right: 0.5px solid rgba(64, 102, 165, 1);
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+   
+    
+}
+#email_input:focus{
+
+    box-shadow: 0 0 50px 10px #555;
+}
+.input_button > button{
+    margin: 4px 0 0 -6px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
 .input_button {
     width: 47px;
@@ -75,6 +101,10 @@
 #terms_text > a {
     color: black;
 }
+#terms_text > a:hover {
+    color: rgba(64, 102, 165, 1);
+
+}
 .link_box {
     width: 100%;
     display: flex;
@@ -91,30 +121,67 @@
     display: flex;
     justify-content: center;
 }
+
 .soc_media > div {
     display: flex;
     align-items: center;
 }
 
+#inst:hover {
+    background: #C13584;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    
+}
+#inst:active {
+    background: #8F2762;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    
+} 
+#twit:hover {
+    background: #1DA1F2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+} 
+#twit:active {
+    background: #177FBF;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+} 
+#yt:hover {
+    background: #FF0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+} 
+#yt:active {
+    background: #CC0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+} 
+#fb:hover {
+    background: #4267B2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    
+} 
+#fb:active {
+    background: #2F4A80;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3); 
+} 
+#terms_text > a:active {
+    color: rgba(35, 55, 89, 1);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#fb:hover > div > svg > path{
+    fill: white !important;
+    opacity: 1 !important;
+}
+#inst:hover > div > svg > path{
+    fill: white !important;
+    opacity: 1 !important;
+}
+#twit:hover > div > svg > path{
+    fill: white !important;
+    opacity: 1 !important;
+}
+#yt:hover > div > svg > path{
+    fill: white !important;
+    opacity: 1 !important;
+}
 
 
 
@@ -152,22 +219,25 @@
         min-height: 50px
     }
     .text_main > h1{
+        margin: 2px 0 0 0 ;
         font-family: Georgia;
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
         line-height: 34px;
         letter-spacing: 1px;
+        min-width: 315px;
     }
     
-    .text_secondary > h5{
+    .text_secondary > h2{
         font-family: Arial;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 26px;
         color: rgba(106, 112, 123, 1);
-        margin: 10px 0 0 0 !important;
+        margin: 0px 0 0 0 !important;
+     
         
     }
     .form_box{
@@ -177,6 +247,7 @@
        
     }
     .form_inner > input{
+       
         width: 90%;
         height: 60px;
         border-top: 1px rgba(227, 227, 228, 1) solid;
@@ -242,6 +313,7 @@
         border-top: 1px rgba(227, 227, 228, 1) solid;
         justify-content: center;
         margin: 5px 0 0 0;
+        
     }
     .soc_media{
         width: 46px;
