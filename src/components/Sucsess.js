@@ -17,7 +17,7 @@ const Sucsess = () => {
                 <h1 id="sucsess">Thanks for subscribing!</h1>
             </div>
             <div className="text_secondary ">
-                <h5 id="sucsess">You have successfully subscribed to our email listing. Check your email for the discount code.</h5>
+                <h2 id="sucsess">You have successfully subscribed to our email listing. Check your email for the discount code.</h2>
             </div>
         </div>
            <LinkButtons />
