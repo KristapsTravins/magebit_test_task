@@ -1,15 +1,21 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import LinkButtons from './LinkButtons';
 import { useForm } from "react-hook-form";
-
+import { SendDb } from '../api/apiCall';
+import { StateContext } from './MainBlock';
 
 
 
 
 const SendSub = () => {
+const {isSub,setSub} = useContext(StateContext);
 // validation
 const { register, formState:{errors}, handleSubmit } = useForm({criteriaMode: "all"});
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    SendDb(data);
+    setSub(!isSub);
+  };
+
     const isCo = (val) =>{
         let str = "";
       for(let i = val.length-1;i>0;i--){
@@ -20,6 +26,10 @@ const { register, formState:{errors}, handleSubmit } = useForm({criteriaMode: "a
       }
       return true
     }
+
+    
+
+
     return (
         <div className="text_box">
         <div className="text_main">
