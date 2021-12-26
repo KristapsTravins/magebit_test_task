@@ -9,8 +9,9 @@ fetch(urlSend,{
     },
     body: JSON.stringify(email)
 }).then(resp=>{
+    console.log(resp.status)
     if(resp.status === 200){
-        return true
+        return true 
     }
 });
 }
