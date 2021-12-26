@@ -4,7 +4,7 @@
         private $host = "localhost";
         private $database_name = "Magebit_email";
         private $username = "root";
-        private $password = "G6#QnkyL]~N5FTzj";
+        private $password = "test12345";
 
         public $conn;
 
